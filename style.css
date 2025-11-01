@@ -1,0 +1,147 @@
+/* ============================= */
+/* 1. BACKGROUND FOTO (UBAH DI SINI) */
+/* ============================= */
+
+.page-bg {
+  background: url('5ZSv4R.png') center/cover no-repeat fixed;
+  padding: 40px 0;
+}
+
+/* ============================= */
+/* 2. KONTAINER TENGAH */
+/* ============================= */
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* putih transparan */
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+}
+
+/* ============================= */
+/* 3. PROFIL */
+/* ============================= */
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 120px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #ddd;
+}
+
+.desc {
+  margin-top: 10px;
+  color: #444;
+}
+
+/* ============================= */
+/* 4. CARD GRID (2 KOLOM) */
+/* ============================= */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.15em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.sub {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* ============================= */
+/* 5. FOOTER */
+/* ============================= */
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  background: #eee;
+  margin-top: 25px;
+}
+
+a {
+  color: #0066cc;
+}
+
+/* ============================= */
+/* 6. RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.topnav {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(2px);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.topnav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
